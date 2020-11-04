@@ -10,13 +10,13 @@ const connect = function(data) {
 
     conn.on('connect', () => {
       conn.write('Name: RAP');
-      conn.write('Move: up');
-      //conn.write('Move: down');
+      // conn.write('Move: up');
+      // //conn.write('Move: down');
       // setTimeout(() => conn.write('Move: left'), 1100);
       // setTimeout(() => conn.write('Move: up'), 2100);
       // setTimeout(() => conn.write('Move: right'), 3100);
-      const move = setInterval(() => conn.write('Move: right'), 100);
-      setTimeout(() =>  clearInterval(move), 5000)
+      // const move = setInterval(() => conn.write('Move: right'), 100);
+      // setTimeout(() =>  clearInterval(move), 5000)
       // conn.write('Move: right');
       console.log('Successfully connected to game server');
     })
